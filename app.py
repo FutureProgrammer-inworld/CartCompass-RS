@@ -232,9 +232,9 @@ st.markdown("""
 # ==========================================
 @st.cache_data
 def load_data():
-    customer_profile = pd.read_csv(r"D:\Sem 4\Rekomendasi Sistem\Tugas\PA\data\processed_customer_segmented.csv")
-    rules = pd.read_csv(r"D:\Sem 4\Rekomendasi Sistem\Tugas\PA\data\processed_association_rules.csv")
-    similarity_matrix = joblib.load(r"D:\Sem 4\Rekomendasi Sistem\Tugas\PA\src\customer_similarity.pkl")
+    customer_profile = pd.read_csv(r"data\processed_customer_segmented.csv")
+    rules = pd.read_csv(r"data\processed_association_rules.csv")
+    similarity_matrix = joblib.load(r"data\customer_similarity.pkl")
     return customer_profile, rules, similarity_matrix
 
 try:
